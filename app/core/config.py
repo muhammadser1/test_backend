@@ -16,7 +16,7 @@ class Config:
     
     # MongoDB Settings
     MONGO_CLUSTER_URL = os.getenv("MONGO_CLUSTER_URL")
-    MONGO_DATABASE = os.getenv("MONGO_DATABASE", "institute_db")
+    MONGO_DATABASE = os.getenv("MONGO_DATABASE", "institute_db_test")
     
     # JWT Security
     JWT_SECRET_KEY = os.getenv("SECRET_KEY", "your-secret-key-change-this-in-production-minimum-32-characters")
