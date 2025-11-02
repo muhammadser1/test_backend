@@ -31,7 +31,7 @@ class Config:
     EMAIL_SERVER = os.getenv("EMAIL_SERVER", "smtp.gmail.com")
     
     # CORS Settings
-    ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "https://testfrontenda.vercel.app")
+     allow_origins=["*"],
     
     @classmethod
     def get_allowed_origins_list(cls):
