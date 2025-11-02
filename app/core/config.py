@@ -31,7 +31,7 @@ class Config:
     EMAIL_SERVER = os.getenv("EMAIL_SERVER", "smtp.gmail.com")
     
     # CORS Settings
-     allow_origins=["*"],
+    ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5173")
     
     @classmethod
     def get_allowed_origins_list(cls):
